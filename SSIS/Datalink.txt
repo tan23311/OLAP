@@ -1,0 +1,1 @@
+https://docs.yugabyte.com/preview/sample-data/northwind/#:~:text=The%20Northwind%20database%20is%20an,%2DMicrosoft%20databases%2C%20including%20PostgreSQL
