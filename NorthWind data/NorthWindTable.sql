@@ -21,7 +21,7 @@ CREATE TABLE customer_demographics (
 );
 
 CREATE TABLE customers (
-    customer_id varchar(100) NOT NULL PRIMARY KEY,
+    customer_id varchar(20) NOT NULL PRIMARY KEY,
     company_name varchar(40) NOT NULL,
     contact_name varchar(30),
     contact_title varchar(30),
@@ -35,7 +35,7 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE customer_customer_demo (
-    customer_id varchar(100) NOT NULL,
+    customer_id varchar(20) NOT NULL,
     customer_type_id varchar(100) NOT NULL,
     PRIMARY KEY (customer_id, customer_type_id),
     FOREIGN KEY (customer_type_id) REFERENCES customer_demographics(customer_type_id),
@@ -106,7 +106,7 @@ CREATE TABLE shippers (
 
 CREATE TABLE orders (
     order_id int NOT NULL PRIMARY KEY,
-    customer_id varchar(100),
+    customer_id varchar(20),
     employee_id int,
     order_date date,
     required_date date,
